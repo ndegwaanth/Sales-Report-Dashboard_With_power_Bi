@@ -1,0 +1,114 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e79d61f72495b410230d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"033293d19650ac1c8954\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.076923076923077,\"y\":426.9230769230769,\"z\":0,\"width\":416.53846153846155,\"height\":293.0769230769231,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(InvoiceData.Sales)\"}],\"Category\":[{\"queryRef\":\"MasterCustomer1.CityProvince\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MasterCustomer1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CityProvince\"},\"Name\":\"MasterCustomer1.CityProvince\",\"NativeReferenceName\":\"CityProvince\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 293.08,
+          "width": 416.54,
+          "x": 8.08,
+          "y": 426.92,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"0d96b996eabe0ae4005c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":867.6923076923076,\"y\":482.30769230769226,\"z\":7000,\"width\":411.9230769230769,\"height\":156.9230769230769,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(InvoiceData.Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 156.92,
+          "width": 411.92,
+          "x": 867.69,
+          "y": 482.31,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"1bcdab3414101758c4bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":335.7692307692308,\"y\":13.846153846153845,\"z\":8000,\"width\":609.2307692307692,\"height\":48.46153846153846,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SALES REPORT\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Times New Roman\",\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 48.46,
+          "width": 609.23,
+          "x": 335.77,
+          "y": 13.85,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"3c5c2cf70daee496ca50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":94.61538461538461,\"z\":2000,\"width\":395.7692307692308,\"height\":249.23076923076923,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(InvoiceData.Quantity)\"}],\"Category\":[{\"queryRef\":\"InvoiceData.Date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"InvoiceData.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.23,
+          "width": 395.77,
+          "x": 0.00,
+          "y": 94.62,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5d512d105b28aabee7c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":867.6923076923076,\"y\":360,\"z\":6000,\"width\":411.9230769230769,\"height\":113.07692307692307,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(InvoiceData.TotalDryItems)\"}],\"TrendLine\":[{\"queryRef\":\"MasterCustomer1.CityProvince\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MasterCustomer1\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CityProvince\"},\"Name\":\"MasterCustomer1.CityProvince\",\"NativeReferenceName\":\"CityProvince\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"TotalDryItems\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.TotalDryItems)\",\"NativeReferenceName\":\"Sum of TotalDryItems\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 113.08,
+          "width": 411.92,
+          "x": 867.69,
+          "y": 360.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"67f752c3a394939ad002\",\"layouts\":[{\"id\":0,\"position\":{\"x\":416.53846153846155,\"y\":84.23076923076923,\"z\":3000,\"width\":417.6923076923077,\"height\":246.9230769230769,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"InvoiceData.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Sum(InvoiceData.Sales)\"},{\"queryRef\":\"InvoiceData.Sales YoY%\"},{\"queryRef\":\"InvoiceData.Sales YTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"InvoiceData.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales YoY%\"},\"Name\":\"InvoiceData.Sales YoY%\",\"NativeReferenceName\":\"Sales YoY%\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales YTD\"},\"Name\":\"InvoiceData.Sales YTD\",\"NativeReferenceName\":\"Sales YTD\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 246.92,
+          "width": 417.69,
+          "x": 416.54,
+          "y": 84.23,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"697f08993e0016c947ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":808.8461538461538,\"y\":94.61538461538461,\"z\":4000,\"width\":470.7692307692308,\"height\":249.23076923076923,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Tooltips\":[{\"queryRef\":\"Sum(InvoiceData.Sales)\"}],\"Category\":[{\"queryRef\":\"MasterCustomer1.CityProvince\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MasterCustomer1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Sales\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.Sales)\",\"NativeReferenceName\":\"Sum of Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CityProvince\"},\"Name\":\"MasterCustomer1.CityProvince\",\"NativeReferenceName\":\"CityProvince\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.23,
+          "width": 470.77,
+          "x": 808.85,
+          "y": 94.62,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"bd06eba2172d308650e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":439.6153846153846,\"y\":426.9230769230769,\"z\":1000,\"width\":416.53846153846155,\"height\":293.0769230769231,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(InvoiceData.TotalChillerItems)\"}],\"Category\":[{\"queryRef\":\"MasterCustomer1.CityProvince\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MasterCustomer1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"TotalChillerItems\"}},\"Function\":0},\"Name\":\"Sum(InvoiceData.TotalChillerItems)\",\"NativeReferenceName\":\"Sum of TotalChillerItems\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CityProvince\"},\"Name\":\"MasterCustomer1.CityProvince\",\"NativeReferenceName\":\"CityProvince\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"TotalChillerItems\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 293.08,
+          "width": 416.54,
+          "x": 439.62,
+          "y": 426.92,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c51f5760202966b38437\",\"layouts\":[{\"id\":0,\"position\":{\"x\":867.6923076923076,\"y\":639.2307692307692,\"z\":5000,\"width\":411.9230769230769,\"height\":80.76923076923076,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"InvoiceData.Date.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"InvoiceData\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"InvoiceData.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_53ff3785-16ce-4d6f-8d94-7e1845fd4ccb\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2018L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_53ff3785-16ce-4d6f-8d94-7e1845fd4ccb\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2018L\"}}}}},\"displayName\":\"2018\"}]}}",
+          "filters": "[]",
+          "height": 80.77,
+          "width": 411.92,
+          "x": 867.69,
+          "y": 639.23,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
